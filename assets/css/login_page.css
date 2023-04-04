@@ -1,0 +1,112 @@
+.login {
+    height: 100vh;
+    background: rgb(173, 151, 79);
+    background: linear-gradient(0deg, rgb(173, 151, 79) 0%, rgb(173, 151, 79) 0%, rgb(255, 255, 255) 100%);
+}
+
+div.input-field
+{
+    display: block;
+    text-align: center;
+}
+
+form#register-form
+{
+    font-family: 'Judson', serif;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    position: relative;
+    top: 100px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type = date]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #AD974F;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+    background-color : #cccccc;
+    color: #1D3557;
+}
+
+select
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus
+{
+    outline : 2px solid green;
+}
+
+.form-field.success input
+{
+    border-color: green;
+}
+
+.form-field.error input
+{
+    border-color: red;
+}
+
+.form-field.error #content
+{
+    border-color: red;
+}
+
+.form-field small
+{
+    visibility: hidden;
+}
+
+.form-field.error small
+{
+    visibility: visible;
+    color: red;
+    font-size: 20px;
+}
+
+#errors
+{
+    font-family: 'Judson', serif;
+    color: red;
+    font-size: 15px;
+}

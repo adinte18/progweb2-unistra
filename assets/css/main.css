@@ -1,0 +1,365 @@
+.landing-img{
+    background-image: url("/assets/img/woman.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+h1 ~ p {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    padding: 0;
+    margin: -10px 0 0 0;
+}
+
+.landing-img a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.landing-img a:focus,
+.landing-img a:active {
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 0.5s;
+}
+
+section > * {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* ====== NOTRE SALON ====== */
+.section-title{
+    xmargin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.section-title span{
+    width: 90px;
+    height: 2px;
+    background-color: var(--golden);
+}
+
+.salon-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.salon-info > div {
+    margin-bottom: 1rem;
+}
+
+div p{
+    line-height: 1.75rem;
+}
+
+
+/* ====== NOS PRESTATIONS ====== */
+.prestations-img{
+    background-image: url("/assets/img/hairdresser-objects.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    xposition: relative;
+    margin-right: 0;
+    margin-left: 0;
+    height: 200px;
+    filter: blur(2px);
+}
+.prestations-img ~ .section-title{
+    margin-bottom: 0;
+}
+
+.prestations-img ~ .section-title h2 {
+    color: var(--white);
+}
+
+.container{
+    height: 350px;
+    position: relative;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stack-top{
+    z-index: 9;
+    margin-top: 15%;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    z-index: 15;
+}
+
+.services > div {
+    width: 65%;
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    xheight: 400px;
+    text-align: center;
+    padding: 30px;
+}
+
+.services > div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.services img{
+    height: 100px;
+}
+
+.services p{
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 4.5rem;
+}
+
+
+/* ====== LES AVIS DE NOS CLIENTS ====== */
+.avis-img{
+    background-image: url("/assets/img/dark-textile.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    xheight: 200px;
+}
+
+.avis-img .section-title{
+    margin-top: 15%;
+}
+
+.avis-img .title{
+    color: var(--white);
+}
+
+/*carousel style */
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    xtext-align: center;
+    margin-bottom: 4rem;
+}
+#slider input[type=radio] {
+    display: none;
+}
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+#slides {
+    padding: 25px;
+    xborder: 3px solid #ccc;
+    background: rgba(255, 255, 255, .3);
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.quote-top,
+.quote-bottom{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: normal;
+    color: var(--golden);
+    font-size: 9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote-top{
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.quote-bottom{
+    position: absolute;
+    bottom: -85px;
+    right: 15px;
+}
+
+#slides .avis{
+    text-align: left;
+    line-height: normal;
+    font-style: italic;
+}
+
+#slides .username{
+    text-align: right;
+    font-weight: 600;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 250px;
+}
+#slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+#controls label:hover {
+    opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    background: url("/assets/img/right-arrow.png") no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url("/assets/img/left-arrow.png") no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+}
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+        margin: 0;
+    }
+    #slides {
+        max-width: calc(100% - 100px);
+        margin: 0 auto;
+    }
+}
+
+
+
+
+@media (min-width:1300px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    .avis-img .section-title
+    {
+        margin-top: 5%;
+    }
+
+    .salon-info
+    {
+        flex-direction: row;
+    }
+
+    .salon-info > div
+    {
+        margin: auto;
+        text-align: center;
+    }
+
+    .salon-info > img
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
